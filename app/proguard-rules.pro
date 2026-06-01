@@ -1,9 +1,3 @@
--keep class com.itextpdf.** { *; }
--dontwarn com.itextpdf.**
--dontwarn org.slf4j.**
--keep class org.slf4j.** { *; }
--dontwarn org.bouncycastle.**
--keep class org.bouncycastle.** { *; }
 -keep class com.google.mlkit.** { *; }
 -keep class com.google.android.gms.** { *; }
 -dontwarn com.google.mlkit.**
@@ -15,4 +9,3 @@
 -keepattributes *Annotation*
 -dontwarn javax.**
 -dontwarn java.awt.**
--dontwarn java.beans.**
