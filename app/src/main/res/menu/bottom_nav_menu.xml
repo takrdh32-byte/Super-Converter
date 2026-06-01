@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_pdf"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="PDF" />
+
+    <item
+        android:id="@+id/navigation_png"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="PNG" />
+
+    <item
+        android:id="@+id/navigation_ocr"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="OCR" />
+
+</menu>
