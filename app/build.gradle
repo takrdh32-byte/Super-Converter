@@ -17,7 +17,6 @@ android {
         multiDexEnabled true
     }
 
-    // ✅ signingConfigs PEHLE define karo
     signingConfigs {
         release {
             storeFile System.getenv("KEYSTORE_FILE") != null
@@ -31,8 +30,9 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            // ✅ minify OFF — iText7 crash fix
+            minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             if (System.getenv("KEYSTORE_FILE") != null) {
                 signingConfig signingConfigs.release
